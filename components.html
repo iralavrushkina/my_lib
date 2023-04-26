@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>components</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+          	  <a class="logo" href="index.html">Mylib</a>
+          	    <ul class="nav">
+                  <li><a href="elements.html">Elements</a></li>
+                  <li><a href="components.html">Components</a></li>
+                  <li><a href="layouts.html">Layouts</a></li>
+                  <li><a href="#">Drafts</a></li>
+                  <li><a href="#">Documentations</a></li>
+                </ul>
+            </header>
+            <div class="container">
+                <aside class="sidebar">
+                    <ul>
+                      <li><a href="#chevron-menu">chevron menu</a></li>
+                      <li><a href="#dropdown-menu">dropdown menu</a></li>
+                      <li><a href="#modal-box">modal box</a></li>
+                      <li><a href="#allerts">allerts</a></li>
+                    </ul>
+               </aside> 
+                <main class="content">
+               	  <h2 class="title" id="chevron-menu">Chevron menu</h2>
+                  <pre class="info">  Possible to use on gradient background 
+  Easy to use opacity for items background 
+  Cross-browser</pre> 
+                    <!--chevron-->
+                    <nav class="nav-gradient">
+                	   <ul class="nav-list">
+          	               <li class="nav-item">
+                              <a href="#">about</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#">careers</a>
+                            </li>
+                            <li class="nav-item">
+                               <a href="#">faq</a>
+                            </li>
+                            <li class="nav-item">
+                               <a href="#">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="border">
+                      <span>html</span>
+                      <pre class="bg-white">&lt;nav class="nav-gradient"&gt;
+     &lt;ul class="nav-list"&gt;
+     &lt;li class="nav-item"&gt;&lt;a href="#"&gt;about&lt;/a&gt;&lt;/li&gt;
+     &lt;li class="nav-item"&gt;&lt;a href="#"&gt;careers&lt;/a&gt;&lt;/li&gt;
+     &lt;li class="nav-item"&gt;&lt;a href="#"&gt;faq&lt;/a&gt;&lt;/li&gt;
+     &lt;li class="nav-item"&gt;&lt;a href="#"&gt;contact&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+                    </div>
+                    <div class="border">
+                      <span>css</span>
+                      <pre class="bg-white">.nav-gradient {
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+  padding: 2px 60px;
+  margin: 0 48px 59px;
+}
+.nav-list {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 48px 0 0;
+}
+.nav-item a {
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 37px;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 29px 25px;
+  display: inline-block;
+  position: relative;
+}
+.nav-item a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  left:-25px;
+  width: 0px;
+  height: 0px;
+  border-left: 25px solid transparent;
+  border-bottom: 47px solid #fff;
+  border-top: 48px solid #fff; 
+}
+.nav-item a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+  border-color: transparent transparent transparent #fff; 
+}
+.nav-gradient a:hover {
+  background:rgb(255, 255, 255,70%);
+}
+.nav-gradient a:hover:before {
+  border-color:rgb(255, 255, 255,70%) transparent rgb(255, 255, 255,70%) transparent;
+}
+.nav-gradient a:hover:after {
+  border-color: transparent transparent transparent rgb(255, 255, 255,70%);
+}</pre>
+                    </div>
+               </main>
+            </div>      
+        </div>         
+    </body>
+</html>

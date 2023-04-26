@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layouts</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <div class="wrapper">
+            <header>
+          	  <a class="logo" href="index.html">Mylib</a>
+          	    <ul class="nav">
+                  <li><a href="elements.html">Elements</a></li>
+                  <li><a href="components.html">Components</a></li>
+                  <li><a href="layouts.html">Layouts</a></li>
+                  <li><a href="#">Drafts</a></li>
+                  <li><a href="#">Documentations</a></li>
+                </ul>
+            </header>
+            <div class="container">
+                <aside class="sidebar">
+                    <ul>
+                      <li><a href="#type-1">Type 1</a></li>
+                      <li><a href="#type-2">Type 3</a></li>
+                      <li><a href="#type-3">Type 3</a></li>
+                    </ul>
+               </aside> 
+                <main class=content>
+               	  <h2 class="title" id="type-1">Type 1</h2>
+                  <pre class="info">Сan be used without sidebar
+Cross-browser</pre>
+                   <!--layot 1-->
+                   <div class="layout-f">
+                      <div class="wrapper-f">
+                          <header>
+          	                  <div class="logo-f">&lt;!-- Mylib --&gt;</div>
+          	                    <ul class="nav-f">
+                                   <li><a href="#">elements</a></li>
+                                    <li><a href="#">components</a></li>
+                                    <li><a href="#">layouts</a></li>
+                                    <li><a href="#">drafts</a></li>
+                                    <li><a href="#">documentations</a></li>
+                                </ul>
+                           </header>
+                           <div class="container-f">
+                                <aside class="sidebar-f">
+                                    <ul>
+                                      <li><a href="#">typography</a></li>
+                                      <li><a href="#">lists</a></li>
+                                      <li><a href="#">form elements</a></li>
+                                      <li><a href="#">buttons</a></li>
+                                      <li><a href="#">tables</a></li>
+                                      <li><a href="#">tooltips</a></li>
+                                    </ul>
+                                </aside>
+                                <main class="content-f">
+                	              <h1 class="title-f">Typography</h1>
+                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit nisi, elementum eu ultricies sed, rutrum ut justo. Aenean tincidunt dui ante, eu pellentesque nibh ullamcorper at. In volutpat vehicula</p> 
+                                  <p>Etiam placerat est et eros consectetur porttitor. Vestibulum elementum odio ut neque vestibulum aliquam. Duis libero Quisque non maximus purus.</p>
+                                </main>
+                            </div>
+                        </div>  
+                   </div> 
+                   <div class="border">
+                      <span>html</span>
+                      <pre class="bg-white">&lt;div class="wrapper"&gt;
+&lt;header&gt;
+    &lt;div class="logo"&gt;&lt;!-- Mylib --&gt;&lt;/div&gt;
+        &lt;ul class="nav"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;elements&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;components&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;layouts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;drafts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;documentations&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/header&gt;
+&lt;div class="container"&gt;
+    &lt;aside class="sidebar"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;typography&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;lists&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;form elements&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;buttons&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;tables&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;tooltips&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+        &lt;/aside&gt;
+        &lt;main class="content"&gt;
+            &lt;h1 class="title"&gt;Typography&lt;/h1&gt;
+            &lt;p&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;/p&gt; 
+            &lt;p&gt;&lt;/p&gt;
+        &lt;/main&gt;
+    &lt;/div&gt;  
+&lt;/div&gt;</pre>
+                    </div>
+                    <div class="border">
+                      <span>css</span>
+                      <pre class="bg-white">.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+}
+header {
+  background: #000;
+  flex: 0 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{ 
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 24px 48px;
+}
+.nav{
+  display: flex;
+  flex-direction:row;
+  padding: 24px 48px;
+}
+.nav a{
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 0 32px;
+}
+.container {
+  display: flex; 
+  flex-grow: 1;
+}
+.sidebar {
+  background: #d5c4b2;
+  flex: 0 0 240px;
+  padding: 32px 48px;
+}
+.sidebar a{
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 16px 0;
+  }
+.content {
+  background: #fff;
+  flex-grow: 1;
+}
+.title{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  color: #d5c4b2;
+  text-transform: uppercase;
+  padding: 24px 48px;
+  border-bottom: 1px solid #d5c4b2;
+}
+.content p{
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+  padding: 0 48px;
+  margin: 24px 0  0;
+  flex-grow: 1;
+}</pre>
+                    </div>
+                </main> 
+            </div>
+        </div>            
+    </body>
+</html>
